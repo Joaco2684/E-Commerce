@@ -1,4 +1,5 @@
 import 'package:e_commerce/components/cart_products.dart';
+import 'package:e_commerce/pages/checkout.dart';
 import 'package:flutter/material.dart';
 
 class Cart extends StatefulWidget {
@@ -33,7 +34,9 @@ class _CartState extends State<Cart> {
              child: MaterialButton(
                child: Text("Check out", style: TextStyle(color: Colors.white),),
                color: Colors.red,
-               onPressed: () {},
+               onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => CheckOutPage()));
+               },
             ),
           ),
 
