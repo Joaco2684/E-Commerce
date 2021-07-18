@@ -273,10 +273,7 @@ class Similar_single_prod extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Hero(
-        tag: prod_name,
         child: card(context),
-      ),
     );
   }
 

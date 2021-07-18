@@ -90,8 +90,10 @@ class _HomePageState extends State<HomePage> {
 
   ListView body() {
     return ListView(
+      
       physics: BouncingScrollPhysics(),
       children: [
+        
         //Image carousel begins here
         imageCarousel(),
 
@@ -124,9 +126,11 @@ class _HomePageState extends State<HomePage> {
         
         //Grid view
         Container(
-          height: 500.0,
+          height: 500,
           child: Products(),
         )
+         
+        
 
       ],
     );
